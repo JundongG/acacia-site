@@ -2,81 +2,169 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy — ACACIA</title>
-<meta name="description" content="Privacy policy for ACACIA SOFTWARE E CONSULTORIO, SU, LDA and Acacia Inquiry Assistant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — ACACIA</title>
+<meta name="description" content="How ACACIA handles personal data on this website and in the correspondence it receives.">
+<meta name="theme-color" content="#166534">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#fafaf9;--ink:#0a0a0a;--mut:#6b6b6b;--line:#e7e7e4;--card:#fff}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-.wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.preview-bar{background:#111;color:#fafaf9;font-size:13px;text-align:center;padding:10px 16px}
-header{padding:28px 0;border-bottom:1px solid var(--line)}
-.logo{display:inline-flex;align-items:center;gap:10px;font-weight:800;text-decoration:none}
-.logo img{height:28px;width:28px}
-main{padding:56px 0 80px}
-h1{font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-.03em;margin-bottom:8px}
-.meta{color:var(--mut);font-size:14px;margin-bottom:36px}
-h2{font-size:20px;font-weight:700;margin:28px 0 10px;letter-spacing:-.02em}
-p,li{color:#333;font-size:15px;margin-bottom:12px}
-ul{padding-left:20px;margin-bottom:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 28px 12px}
-footer{padding:28px 0 48px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
 </head>
-<body>
-<header>
-  <div class="wrap">
-    <a class="logo" href="index.html"><img src="favicon.svg" alt="">ACACIA</a>
+<body id="top" data-page="privacy">
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="logo-header.svg" alt="ACACIA" height="36"></a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary" data-i18n-attr="aria-label:nav.label">
+      <ul>
+        <li><a href="index.html#product" data-i18n="nav.product">Product</a></li>
+        <li><a href="index.html#how" data-i18n="nav.how">How it works</a></li>
+        <li><a href="index.html#toolkit" data-i18n="nav.toolkit">Trade toolkit</a></li>
+        <li><a href="index.html#technology" data-i18n="nav.tech">Technology</a></li>
+        <li><a href="index.html#company" data-i18n="nav.company">Company</a></li>
+        <li class="nav-cta-li"><a class="btn btn-primary" href="index.html#contact" data-i18n="cta.demo">Request a demo</a></li>
+      </ul>
+    </nav>
+    <div class="bar-tools">
+      <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.label">
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true" lang="en"><span aria-hidden="true">EN</span><span class="sr">English</span></button>
+        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false" lang="pt"><span aria-hidden="true">PT</span><span class="sr">Português</span></button>
+      </div>
+      <a class="btn btn-primary bar-cta" href="index.html#contact" data-i18n="cta.demo">Request a demo</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr" data-i18n="nav.menu">Menu</span>
+        <span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </div>
   </div>
 </header>
-<main>
+
+<main id="main" class="doc">
   <div class="wrap">
-    <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 10 November 2026 (Asia/Tokyo draft) · Controller: ACACIA SOFTWARE E CONSULTORIO, SU, LDA</p>
-    <div class="card">
-      <p>This policy describes how ACACIA SOFTWARE E CONSULTORIO, SU, LDA (“ACACIA”, “we”) handles information for our public website and <strong>Acacia Inquiry Assistant</strong> (and related ACACIA products). It is not legal advice.</p>
+    <header class="doc-head">
+      <p class="eyebrow" data-i18n="pv.eyebrow">Legal</p>
+      <h1 data-i18n="pv.h1">Privacy Policy</h1>
+      <p class="doc-meta" data-i18n="pv.updated">Last updated: 10 November 2026</p>
+      <p class="lede" data-i18n="pv.intro">This policy describes how ACACIA SOFTWARE E CONSULTORIO, SU, LDA (“ACACIA”, “we”) handles information for our public website and Acacia Inquiry Assistant (and related ACACIA products). It is not legal advice.</p>
+    </header>
 
-      <h2>1. Who we are</h2>
-      <p>Legal name: ACACIA SOFTWARE E CONSULTORIO, SU, LDA. Registered office: AV/Rua EN1, Bairro Tomba de Água, Cidade de Mocuba, Província da Zambézia, Mozambique. Contact: <a href="mailto:admin@acaciasoftwaremz.com">admin@acaciasoftwaremz.com</a>. Phone: +258 878922198.</p>
+    <div class="doc-layout">
+      <nav class="toc" aria-label="On this page" data-i18n-attr="aria-label:pv.toc">
+        <p class="m-label" data-i18n="pv.toc">On this page</p>
+        <ol>
+          <li><a href="#who" data-i18n="pv.s1.h">Who we are</a></li>
+          <li><a href="#data" data-i18n="pv.s3.h">What we collect</a></li>
+          <li><a href="#use" data-i18n="pv.s5.h">Why we use it</a></li>
+          <li><a href="#sharing" data-i18n="pv.s6.h">Sharing</a></li>
+          <li><a href="#retention" data-i18n="pv.s7.h">Retention</a></li>
+          <li><a href="#rights" data-i18n="pv.s8.h">Your choices</a></li>
+          <li><a href="#changes" data-i18n="pv.s9.h">Changes</a></li>
+          <li><a href="#status" data-i18n="pv.s11.h">Status of this page</a></li>
+          <li><a href="#contact" data-i18n="pv.s10.h">Contact</a></li>
+        </ol>
+      </nav>
 
-      <h2>2. What we collect</h2>
-      <ul>
-        <li><strong>Contact / demo requests:</strong> name, company, email, and the message you send us.</li>
-        <li><strong>Product use:</strong> account email, inquiry text and company materials you submit for drafting or screening, and product usage needed to operate the service. We design the inquiry assistant so request bodies are not written to application logs.</li>
-        <li><strong>Website:</strong> standard server/CDN logs (IP, user agent, timestamps). We do not run advertising trackers on this preview.</li>
-      </ul>
+      <article class="prose">
+        <section id="who">
+          <h2 data-i18n="pv.s1.h">Who we are</h2>
+          <p data-i18n="pv.s1.p">Legal name: ACACIA SOFTWARE E CONSULTORIO, SU, LDA. Registered office: AV/Rua EN1, Bairro Tomba de Água, Cidade de Mocuba, Província da Zambézia, Mozambique. Contact: <a href="mailto:admin@acaciasoftwaremz.com">admin@acaciasoftwaremz.com</a>. Phone: +258 878922198.</p>
+        </section>
 
-      <h2>3. Why we use it</h2>
-      <ul>
-        <li>To reply to demo and contact requests</li>
-        <li>To provide Acacia Inquiry Assistant and related products (drafting, verification, risk screening) and to improve them on consented task data</li>
-        <li>To secure the service and meet legal obligations</li>
-      </ul>
+        <section id="data">
+          <h2 data-i18n="pv.s3.h">What we collect</h2>
+          <ul>
+            <li data-i18n="pv.s3.l1"><strong>Contact / demo requests:</strong> name, company, email, and the message you send us.</li>
+            <li data-i18n="pv.s3.l5"><strong>Product use:</strong> account email, inquiry text and company materials you submit for drafting or screening, and product usage needed to operate the service. We design the inquiry assistant so request bodies are not written to application logs.</li>
+            <li data-i18n="pv.s3.l3"><strong>Website:</strong> standard server/CDN logs (IP, user agent, timestamps). We do not run advertising trackers on this preview.</li>
+            <li data-i18n="pv.s3.l2"><strong>Language preference:</strong> your English or Portuguese choice is saved in your browser’s local storage. It stays on your device and is not sent to us.</li>
+            <li data-i18n="pv.s3.l4"><strong>Fonts:</strong> this site loads typefaces from Google Fonts. Your browser connects to Google’s servers, which receive your IP address.</li>
+          </ul>
+        </section>
 
-      <h2>4. Sharing</h2>
-      <p>We do not sell personal data. We may use infrastructure and model providers as processors under contract. Cloud GPU and hosting credits, if granted, will be used only for ACACIA’s own workloads.</p>
+        <section id="use">
+          <h2 data-i18n="pv.s5.h">Why we use it</h2>
+          <ul>
+            <li data-i18n="pv.s5.l1">To reply to demo and contact requests</li>
+            <li data-i18n="pv.s5.l2">To provide Acacia Inquiry Assistant and related products (drafting, verification, risk screening) and to improve them on consented task data</li>
+            <li data-i18n="pv.s5.l3">To secure the service and meet legal obligations</li>
+          </ul>
+          <p data-i18n="pv.s5.p">We do not sell personal data.</p>
+        </section>
 
-      <h2>5. Retention</h2>
-      <p>Demo-request emails are kept until you ask to be removed. Product content retention periods will be published with each product’s terms.</p>
+        <section id="sharing">
+          <h2 data-i18n="pv.s6.h">Sharing</h2>
+          <p data-i18n="pv.s6.p">We do not sell personal data. We may use infrastructure and model providers as processors under contract. Cloud GPU and hosting credits, if granted, will be used only for ACACIA’s own workloads.</p>
+        </section>
 
-      <h2>6. Your choices</h2>
-      <p>Email <a href="mailto:admin@acaciasoftwaremz.com">admin@acaciasoftwaremz.com</a> to access, correct, or delete contact data, or to ask questions about this policy.</p>
+        <section id="retention">
+          <h2 data-i18n="pv.s7.h">Retention</h2>
+          <p data-i18n="pv.s7.p">Demo-request emails are kept until you ask to be removed. Product content retention periods will be published with each product’s terms.</p>
+        </section>
 
-      <h2>7. Changes</h2>
-      <p>We will update this page when practices change. Material changes will be reflected by a new “Last updated” date.</p>
+        <section id="rights">
+          <h2 data-i18n="pv.s8.h">Your choices</h2>
+          <p data-i18n="pv.s8.p">Email <a href="mailto:admin@acaciasoftwaremz.com">admin@acaciasoftwaremz.com</a> to access, correct, or delete contact data, or to ask questions about this policy.</p>
+        </section>
 
-      <h2>8. Status of this page</h2>
-      <p>This policy applies to acaciasoftwaremz.com and related ACACIA product surfaces. We will update the “Last updated” date when practices change.</p>
+        <section id="changes">
+          <h2 data-i18n="pv.s9.h">Changes</h2>
+          <p data-i18n="pv.s9.p">We will update this page when practices change. Material changes will be reflected by a new “Last updated” date.</p>
+        </section>
+
+        <section id="status">
+          <h2 data-i18n="pv.s11.h">Status of this page</h2>
+          <p data-i18n="pv.s11.p">This policy applies to acaciasoftwaremz.com and related ACACIA product surfaces. We will update the “Last updated” date when practices change.</p>
+        </section>
+
+        <section id="contact">
+          <h2 data-i18n="pv.s10.h">Contact</h2>
+          <p data-i18n="pv.s10.p">For privacy questions or to exercise your rights, contact:</p>
+          <div class="doc-card">
+            <strong>ACACIA SOFTWARE E CONSULTORIO, SU, LDA</strong>
+            <span data-i18n="ct.addr">Registered office: AV/Rua EN1, Bairro Tomba de Água, Cidade de Mocuba, Província da Zambézia, Mozambique</span>
+            <a href="mailto:admin@acaciasoftwaremz.com">admin@acaciasoftwaremz.com</a>
+            <a href="tel:+258878922198">+258 878922198</a>
+          </div>
+        </section>
+
+        <a class="back" href="index.html" data-i18n="pv.back">← Back to home</a>
+      </article>
     </div>
   </div>
 </main>
-<footer>
-  <div class="wrap">© 2026 ACACIA SOFTWARE E CONSULTORIO, SU, LDA · <a href="index.html">Back to home</a></div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="logo-header.svg" alt="ACACIA" height="36">
+      <p class="legal-name">ACACIA SOFTWARE E CONSULTORIO, SU, LDA</p>
+      <p data-i18n="foot.tag">AI workspace for export desks. In development in Mocuba, Zambézia, Mozambique.</p>
+    </div>
+    <nav class="foot-links" aria-label="Footer" data-i18n-attr="aria-label:foot.label">
+      <a href="index.html#product" data-i18n="nav.product">Product</a>
+      <a href="index.html#how" data-i18n="nav.how">How it works</a>
+      <a href="index.html#toolkit" data-i18n="nav.toolkit">Trade toolkit</a>
+      <a href="index.html#technology" data-i18n="nav.tech">Technology</a>
+      <a href="index.html#company" data-i18n="nav.company">Company</a>
+      <a href="privacy.html" aria-current="page" data-i18n="foot.privacy">Privacy</a>
+    </nav>
+    <div class="foot-contact">
+      <a href="mailto:admin@acaciasoftwaremz.com">admin@acaciasoftwaremz.com</a>
+      <a href="tel:+258878922198">+258 878922198</a>
+      <span data-i18n="co.v2">Mocuba, Zambézia, Mozambique</span>
+    </div>
+  </div>
+  <div class="wrap foot-legal">
+    <span>© 2026 ACACIA. <span data-i18n="foot.rights">All rights reserved.</span></span>
+    <span data-i18n="foot.status">Acacia Inquiry Assistant is in development. Screens shown are illustrative.</span>
+  </div>
 </footer>
+
 </body>
 </html>
