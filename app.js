@@ -139,7 +139,6 @@
     'co.p2': 'Desenvolvemos software e aplicações com IA. O nosso produto principal é o Acacia Inquiry Assistant, para exportadores e empresas de comércio, a par de um conjunto focado de ferramentas de comércio para as mesmas equipas de exportação. Somos autofinanciados (sem financiamento institucional de capital de risco até à data) e usamos ferramentas modernas de desenvolvimento no trabalho quotidiano de produto.',
     'co.p3': 'Nesta pré-visualização não apresentamos logótipos de clientes, números de utilizadores, prémios nem valores de receita. Só aparecerão quando forem reais e estiverem aprovados para publicação.',
     'co.f1': 'Firma',
-    'co.f2': 'Entidade / NUIT',
     'co.f3': 'Constituição',
     'co.v3': '29 de Outubro de 2026',
     'co.f6': 'Registo',
